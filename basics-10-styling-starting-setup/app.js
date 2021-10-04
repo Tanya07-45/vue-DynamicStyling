@@ -6,6 +6,11 @@ boxBSelected: false,
 boxCSelected: false,
 };
 },
+computed:{
+    boxBClasses(){
+        return{active: this.boxBSelected};
+    },
+},
 
 methods:{
     boxSelected(box){
